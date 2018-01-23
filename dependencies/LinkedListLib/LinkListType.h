@@ -156,6 +156,14 @@ public:
 			count--;
 			return;
 		}
+		if (last->info == other)
+		{
+			current = last;
+			last->link = NULL;
+			delete current;
+			count--;
+			return;
+		}
 		current = first->link;
 		while (current != NULL) {
 			if (current->link->info == other)
