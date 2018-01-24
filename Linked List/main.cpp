@@ -36,6 +36,7 @@ int main()
 			break;
 		case 2:
 			list->DeleteNode(value);
+			cout << value << " has been deleted from the list\n";
 			break;
 		case 3:
 			list->Print();
